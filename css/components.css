@@ -12,9 +12,11 @@
 
 .categorias div {
     background-color: rgba(220, 51, 169, 0.095);
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .card {
@@ -26,5 +28,13 @@
 
 .card img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    max-height: 350px;
+}
+h2{
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: blueviolet;
 }
