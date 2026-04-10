@@ -1,0 +1,28 @@
+header {
+    background-color: #ff00c888;
+    color: rgb(22, 22, 22);
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: rgba(184, 225, 251, 0.577);
+    border-bottom: 1px solid #0d28f5;
+    padding: 15px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #ff00c888;
+    color: rgb(29, 28, 29);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
