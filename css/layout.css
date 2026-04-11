@@ -1,28 +1,72 @@
-header {
-    background-color: #ff00c888;
-    color: rgb(22, 22, 22);
-    text-align: center;
-    padding: 20px;
-}
-
-nav {
-    background-color: rgba(184, 225, 251, 0.577);
-    border-bottom: 1px solid #0d28f5;
-    padding: 15px;
-}
-nav ul {
+.home-container {
     display: flex;
-    justify-content: space-around;
+    min-height: 100vh;
 }
 
-main {
-    padding: 20px;
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: linear-gradient(180deg, #5f5fff, #7a5cff);
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
-footer {
-    background-color: #ff00c888;
-    color: rgb(29, 28, 29);
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
     text-align: center;
+}
+
+/* MENÚ */
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar ul li {
+    list-style: none;
     padding: 15px;
-    margin-top: 20px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.sidebar ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+/* ACTIVO */
+.sidebar ul li.activo {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+}
+
+/* ICONOS */
+.sidebar i {
+    font-size: 18px;
+}
+
+/* BADGE */
+.badge {
+    margin-left: auto;
+    background-color: white;
+    color: #5f5fff;
+    padding: 4px 9px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* CONTENIDO */
+.contenido-home {
+    flex: 1;
+    padding: 40px;
+    background-color: #f5f6ff;
 }
