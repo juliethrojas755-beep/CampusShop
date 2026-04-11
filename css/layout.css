@@ -70,3 +70,30 @@
     padding: 40px;
     background-color: #f5f6ff;
 }
+.header {
+    background-color: #5f5fff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.nav {
+    background-color: #eaeaff;
+    padding: 10px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav a {
+    color: #333;
+    font-weight: 500;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #eaeaff;
+}
