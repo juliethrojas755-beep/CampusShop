@@ -2,8 +2,13 @@
     .productos-grid{
       grid-template-columns:repeat(3,1fr) ;
     }
+}
+
+@media (max-width: 600px) {
     .fila {
         grid-template-columns: 1fr;
-        gap
-   
+        gap:5px;
+
 }
+}
+
