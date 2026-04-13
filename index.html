@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusShop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusShop</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
+
+<body>
 
 <header class="header">
 <h1>CampusShop</h1>
 </header>
 
 <nav class="nav">
-<ul>
-<li><a href="index.html">Inicio</a></li>
-<li><a href="catalogo.html">Catálogo</a></li>
-<li><a href="carrito.html">Carrito</a></li>
-<li><a href="perfil.html">Perfil</a></li>
-</ul>
-</nav>
+ <ul>
+   <li>  <a href="index.html">Inicio</a></li>
+   <li><a href="catalogo.html">Catálogo</a></li>
+   <li><a href="carrito.html">Carrito</a></li>
+   <li><a href="perfil.html">Perfil</a></li>
+   </ul>
+   </nav>
 
-<body>
 <main class="home-container">
 
-<aside class="sidebar">
-<h2>CampusShop</h2>
+  <aside class="sidebar">
+    <h2>CampusShop</h2>
 
-<nav>
-  <ul>
-<li class="activo"><i class="fas fa-bars"></i>Todos </li>
-<li><i class="fas fa-shirt"></i> Blusas </li>
-<li><i class="fas fa-user"></i> Pantalones</li>
-<li><i class="fas fa-shoe-prints"></i> Zapatillas</li>
-<li><i class="fas fa-bag-shopping"></i>Accesorios</li>
-<li><i class="fas fa-cart-shopping"></i> Carrito <span class="badge">3</span></li>
+ <ul>
+   <li class="activo"><a href="catalogo.html"><i class="fas fa-bars"></i> Todos</a></li>
+   <li><a href="catalogo.html"><i class="fas fa-shirt"></i> Blusas</a></li>
+   <li><a href="catalogo.html"><i class="fas fa-user"></i> Pantalones</a></li>
+   <li><a href="catalogo.html"><i class="fas fa-shoe-prints"></i> Zapatillas</a></li>
+   <li><a href="catalogo.html"><i class="fas fa-bag-shopping"></i> Accesorios</a></li>
+   <li><a href="carrito.html"><i class="fas fa-cart-shopping"></i> Carrito <span class="badge">3</span></a></li>
+    
+ </ul>
 
-
-</ul>
-</nav>
+    
 </aside>
 <section class="contenido-home">
 <h3>Bienvenida a CampusShop</h3>
 <p>Encuentra los mejores productos .</p>
+
+ <!-- PRODUCTOS DESTACADOS -->
+    <div class="productos-grid">
+
+      <article class="card">
+        <img src="img/camisa1.jpg" alt="">
+        <h3>Blusa deportiva</h3>
+        <p>$220.000</p>
+      </article>
+
+      <article class="card">
+        <img src="img/pantalon1.webp" alt="">
+        <h3>Pantalón Casual</h3>
+        <p>$230.000</p>
+      </article>
+
+      <article class="card">
+        <img src="img/zapatos2.webp" alt="">
+        <h3>Zapatillas Trail</h3>
+        <p>$420.000</p>
+      </article>
+
+    </div>
 </section>
 
 </main>

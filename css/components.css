@@ -267,3 +267,20 @@
     object-fit: cover;
     border-radius: 12px;
 }
+.perfil-container,
+.historial-container,
+.vacio-container {
+    display: flex;
+}
+
+.perfil-content,
+.historial-content,
+.vacio-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #f5f6ff;
+}
+
+.vacio-content {
+    text-align: center;
+}
