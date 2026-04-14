@@ -5,142 +5,79 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CampusShop - Checkout</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+
 
 <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/layout.css">
+
 <link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
- <header class="app-header">
-        <div class="header-top">
-            <h1 class="logo">Campus<span>Shop</span></h1>
-            <div class="header-icons">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-bell"></i>
-            </div>
-        </div>
+<div class="phone">
 
-        <nav class="filtros-scroll">
-            <a href="#todos" class="btn-filtro">Todos</a>
-            <a href="#blusas" class="btn-filtro">Blusas</a>
-            <a href="#pantalones" class="btn-filtro">Pantalones</a>
-            <a href="#zapatillas" class="btn-filtro">Zapatillas</a>
-            <a href="#accesorios" class="btn-filtro">Accesorios</a>
-        </nav>
+    <header class="header">
+        <h2>Checkout</h2>
     </header>
 
-    <main class="app-content">
+    <section class="resumen">
+        <h3>Resumen del pedido</h3>
 
-        <section id="blusas" class="categoria">
-            <h2 class="titulo-seccion">Blusas</h2>
-            <div class="productos-grid">
-                <article class="card">
-                    <img src="img/camisa1.jpg" alt="Blusa deportiva">
-                    <div class="card-info">
-                        <h3>Blusa deportiva</h3>
-                        <p class="precio">$220.000</p>
-                        <a href="producto.html" class="btn-add"><i class="fas fa-plus"></i></a>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="img/camisa2.webp" alt="Blusa casual">
-                    <div class="card-info">
-                        <h3>Blusa casual</h3>
-                        <p class="precio">$250.000</p>
-                        <a href="producto.html" class="btn-add"><i class="fas fa-plus"></i></a>
-                    </div>
-                </article>
-            </div>
-        </section>
+       <div class="item">
+    <div class="info">
+        <img src="img/zapatos1.webp" alt="Zapatillas">
+        <span>Zapatillas</span>
+    </div>
+    <span>$520.000</span>
+</div>
 
-        <section id="pantalones" class="categoria">
-            <h2 class="titulo-seccion">Pantalones</h2>
-            <div class="productos-grid">
-                <article class="card">
-                    <img src="img/pantalon1.webp" alt="Pantalón casual">
-                    <div class="card-info">
-                        <h3>Pantalón casual</h3>
-                        <p class="precio">$260.000</p>
-                        <a href="producto.html" class="btn-add"><i class="fas fa-plus"></i></a>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="img/pantalon2.webp" alt="Pantalón moderno">
-                    <div class="card-info">
-                        <h3>Pantalón moderno</h3>
-                        <p class="precio">$300.000</p>
-                        <a href="producto.html" class="btn-add"><i class="fas fa-plus"></i></a>
-                    </div>
-                </article>
-            </div>
-        </section>
+<div class="item">
+    <div class="info">
+        <img src="img/pantalon1.webp" alt="Pantalón">
+        <span>Pantalón</span>
+    </div>
+    <span>$230.000</span>
+</div>
+        <h3 class="total">Total: $750.000</h3>
+    </section>
 
-        <section id="zapatillas" class="categoria">
-            <h2 class="titulo-seccion">Zapatillas</h2>
-            <div class="productos-grid">
-                <article class="card">
-                    <img src="img/zapatos1.webp" alt="Modelo Trail">
-                    <div class="card-info">
-                        <h3>Modelo Trail</h3>
-                        <p class="precio">$420.000</p>
-                        <a href="producto.html" class="btn-add"><i class="fas fa-plus"></i></a>
-                    </div>
-                </article>
-            </div>
-        </section>
+    <form action="confirmacion.html" method="GET">
 
-        <section id="accesorios" class="categoria">
-            <h2 class="titulo-seccion">Accesorios</h2>
-            <div class="productos-grid">
-                <article class="card">
-                    <img src="img/accesorio1.webp" alt="Gorra">
-                    <div class="card-info">
-                        <h3>Gorra deportiva</h3>
-                        <p class="precio">$120.000</p>
-                        <a href="producto.html" class="btn-add"><i class="fas fa-plus"></i></a>
-                    </div>
-                </article>
-            </div>
-        </section>
+        <h3>Datos del cliente</h3>
 
-        <section id="todos" class="categoria default-view">
-            <h2 class="titulo-seccion">Todos los productos</h2>
-            <div class="productos-grid">
-                <article class="card">
-                    <img src="img/camisa1.jpg">
-                    <div class="card-info"><h3>Blusa deportiva</h3><p class="precio">$220.000</p></div>
-                </article>
-                <article class="card">
-                    <img src="img/zapatos1.webp">
-                    <div class="card-info"><h3>Runner Z</h3><p class="precio">$420.000</p></div>
-                </article>
-            </div>
-        </section>
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
 
-    </main>
+        <input type="text" name="direccion" placeholder="Dirección" required>
 
-    <nav class="bottom-nav">
-        <a href="index.html" class="nav-item">
-            <i class="fas fa-home"></i>
-            <span>Inicio</span>
-        </a>
-        <a href="catalogo.html" class="nav-item active">
-            <i class="fas fa-th-large"></i>
-            <span>Tienda</span>
-        </a>
-        <a href="carrito.html" class="nav-item">
-            <i class="fas fa-shopping-cart"></i>
-            <span>Carrito</span>
-        </a>
-        <a href="perfil.html" class="nav-item">
-            <i class="fas fa-user"></i>
-            <span>Perfil</span>
-        </a>
-    </nav>
+        <input type="text" name="telefono" placeholder="Teléfono" required>
+
+        <h3>Método de pago</h3>
+
+<div class="metodos">
+    <label>
+        <input type="radio" name="pago" required>
+        💳 Tarjeta
+    </label>
+
+    <label>
+        <input type="radio" name="pago">
+        📱 Nequi
+    </label>
+
+    <label>
+        <input type="radio" name="pago">
+        💵 Efectivo
+    </label>
+</div>
+
+        <button type="submit">Pagar ahora</button>
+
+    </form>
+
+</div>
+
 </body>
 </html>

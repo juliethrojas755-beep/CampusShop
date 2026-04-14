@@ -1208,3 +1208,185 @@ height: 100vh;
     display: none;
 
 }
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Secciones */
+h3 {
+    margin: 15px 0 8px;
+}
+
+/* Métodos de pago estilo tarjetas */
+.metodos {
+    display: flex;
+    gap: 10px;
+}
+
+.metodos label {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    background: #f9f9f9;
+    transition: 0.3s;
+}
+
+.metodos input {
+    display: none;
+}
+
+.metodos input:checked + span {
+    color: #3d3b7d;
+    font-weight: bold;
+}
+
+.metodos label:has(input:checked) {
+    border: 2px solid #37335f;
+    background: #eef5ef;
+}
+
+/* Resumen */
+.resumen {
+    background: #eef5ef;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.total {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #7e9bc1;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 15px;
+    background: #5b02ae;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+/* ===== CHECKOUT BONITO ===== */
+
+.phone {
+    max-width: 360px;
+    margin: 60px auto;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.phone .header h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Resumen */
+.phone .resumen {
+    background: #f1f7f2;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.phone .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.phone .total {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2c2192;
+}
+
+/* Inputs */
+.phone input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Método de pago BONITO */
+.phone label {
+    display: block;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+    cursor: pointer;
+    background: #fafafa;
+    transition: 0.2s;
+}
+
+.phone label:hover {
+    border-color: #3713c6;
+}
+
+/* Botón */
+.phone button {
+    width: 100%;
+    padding: 15px;
+    background: #500caf;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.phone button:hover {
+    background: #1343a3;
+}
+/* Item con imagen */
+.phone .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Contenedor izquierdo */
+.phone .info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Imagen del producto */
+.phone .info img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 8px;
+}
