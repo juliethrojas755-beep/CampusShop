@@ -3,85 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CampusShop - Producto</title>
+<title>Producto - CampusShop</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
+<header class="header">
+  <h1>CampusShop</h1>
+</header>
+
+<!-- NAV -->
+<nav class="nav">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="catalogo.html">Catálogo</a></li>
+    <li><a href="carrito.html">Carrito</a></li>
+    <li><a href="perfil.html">Perfil</a></li>
+  </ul>
+</nav>
+
+<!-- MAIN -->
 <main class="producto-container">
 
-<!-- SIDEBAR -->
-<aside class="sidebar">
-<h2>CampusShop</h2>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>Categorías</h2>
+    <ul>
+      <li><a href="catalogo.html"><i class="fas fa-border-all"></i> Todos</a></li>
+      <li><a href="catalogo.html#blusas"><i class="fas fa-shirt"></i> Blusas</a></li>
+      <li><a href="catalogo.html#pantalones"><i class="fas fa-user"></i> Pantalones</a></li>
+      <li><a href="catalogo.html#zapatillas"><i class="fas fa-shoe-prints"></i> Zapatillas</a></li>
+      <li><a href="catalogo.html#accesorios"><i class="fas fa-bag-shopping"></i> Accesorios</a></li>
+    </ul>
+  </aside>
 
-<ul>
-<li><i class="fas fa-border-all"></i> Todos</li>
-<li><i class="fas fa-shirt"></i> Blusas</li>
-<li><i class="fas fa-user"></i> Pantalones</li>
-<li><i class="fas fa-shoe-prints"></i> Zapatillas</li>
-<li><i class="fas fa-bag-shopping"></i> Accesorios</li>
-<li class="activo"><i class="fas fa-cart-shopping"></i> Carrito</li>
-</ul>
-</aside>
+  <!-- CONTENIDO -->
+  <section class="producto-content">
 
-<!-- CONTENIDO -->
-<section class="producto-content">
+    <div class="producto-detalle">
 
-<div class="producto-detalle">
+      <!-- IMAGEN -->
+      <div class="producto-img">
+        <img src="img/camisa1.jpg" alt="Blusa deportiva">
+      </div>
 
-<!-- IMAGEN -->
-<div class="producto-img">
-<img src="img/blusa1.jpeg" alt="Producto">
-</div>
+      <!-- INFO -->
+      <div class="producto-info">
+        <h2>Blusa deportiva</h2>
 
-<!-- INFO -->
-<div class="producto-info">
+        <p class="precio">$220.000</p>
 
-<h2>Blusa Elegante</h2>
+        <p class="descripcion">
+          Blusa deportiva cómoda y ligera, ideal para entrenamiento o uso casual. 
+          Material transpirable y diseño moderno.
+        </p>
 
-<p class="precio">$65.000</p>
+        <!-- TAGS -->
+        <div class="tags">
+          <span>Deportivo</span>
+          <span>Nuevo</span>
+          <span>Disponible</span>
+        </div>
 
-<p class="descripcion">
-Blusa moderna ideal para uso diario, cómoda y elegante para cualquier ocasión.
-</p>
+        <!-- BOTÓN -->
+        <button class="btn-carrito">
+          <i class="fas fa-cart-shopping"></i> Agregar al carrito
+        </button>
 
-<div class="tags">
-<span>NUEVO</span>
-<span>MODA</span>
-</div>
+      </div>
 
-<button class="btn-carrito">Agregar al carrito</button>
+    </div>
 
-</div>
+    <!-- PRODUCTOS RELACIONADOS -->
+    <section class="relacionados">
+      <h3>Productos relacionados</h3>
 
-</div>
+      <div class="productos-grid">
 
-<!-- RELACIONADOS -->
-<h3>Productos relacionados</h3>
+        <article class="card">
+          <img src="img/camisa2.webp" alt="">
+          <h3>Blusa casual</h3>
+          <p>$250.000</p>
+        </article>
 
-<div class="productos-grid">
+        <article class="card">
+          <img src="img/pantalon1.webp" alt="">
+          <h3>Pantalón deportivo</h3>
+          <p>$180.000</p>
+        </article>
 
-<article class="card">
-<img src="img/pantalon1.webp">
-<h3>Pantalón Casual</h3>
-<p>$89.000</p>
-</article>
+        <article class="card">
+          <img src="img/zapatos1.webp" alt="">
+          <h3>Zapatillas Trail</h3>
+          <p>$420.000</p>
+        </article>
 
-<article class="card">
-<img src="img/camisa1.jpg">
-<h3>Zapatillas</h3>
-<p>$120.000</p>
-</article>
+      </div>
+    </section>
 
-</div>
-
-</section>
+  </section>
 
 </main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 CampusShop</p>
+</footer>
 
 </body>
 </html>
