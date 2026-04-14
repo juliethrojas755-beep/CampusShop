@@ -164,93 +164,117 @@
     color: #5f5fff;
 }
 
-/* BOTÓN */
-.btn-checkout {
-    margin-top: 15px;
-    width: 100%;
-    padding: 12px;
-    background-color: #7a5cff;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.checkout-container {
+/* CONTENEDOR */
+.checkout-app {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f6ff;
+    height: 100vh;
 }
 
-.checkout-content {
-    flex: 1;
-    padding: 30px;
-    background-color: #f5f6ff;
+/* CARD */
+.checkout-card {
+    width: 340px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-/* GRID */
-.checkout-grid {
+/* HEADER */
+.checkout-header {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 /* FORM */
 .formulario {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 15px;
 }
 
 .formulario input {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* MÉTODOS */
+.metodos {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.metodo {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
+    background: #f5f6ff;
+    cursor: pointer;
+}
+
+/* ACTIVO */
+.metodo.activo {
+    background: #dff5e8;
+    border: 2px solid #2f6f4f;
+}
+
+.metodo i {
+    font-size: 18px;
+}
+
+/* RESUMEN */
+.resumen {
+    background: #eef7f1;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.resumen h5 {
+    margin-bottom: 10px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.item img {
+    width: 40px;
+    height: 40px;
     border-radius: 8px;
 }
 
-/* DOBLE INPUT */
-.fila-doble {
+.item span {
+    margin-left: auto;
+}
+
+.total {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 /* BOTÓN */
 .btn-pagar {
-    margin-top: 15px;
+    width: 100%;
     padding: 12px;
-    background-color: #5f5fff;
+    background: #2f6f4f;
     color: white;
     border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-/* RESUMEN */
-.resumen-checkout {
-    background: white;
-    padding: 20px;
     border-radius: 12px;
-}
-
-.resumen-checkout h4 {
-    margin-top: 10px;
-    color: #7a5cff;
-}
-
-/* RESPONSIVE */
-@media (min-width: 768px) {
-    .checkout-grid {
-        flex-direction: row;
-    }
-
-    .formulario {
-        flex: 2;
-    }
-
-    .resumen-checkout {
-        flex: 1;
-    }
+    font-weight: 500;
+    cursor: pointer;
 }
 /* IMÁGENES DE PRODUCTOS */
 .card img {

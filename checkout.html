@@ -16,89 +16,77 @@
 
 <body>
 
-<header class="header">
-<h1>CampusShop</h1>
-</header>
+ <main class="checkout-app">
 
-<nav class="nav">
-<ul>
-  <li><a href="index.html">Inicio</a></li>
-  <li><a href="catalogo.html">Catálogo</a></li>
-  <li><a href="carrito.html">Carrito</a></li>
-  <li><a href="perfil.html">Perfil</a></li>
-</ul>
-</nav>
+  <div class="checkout-card">
 
-<main class="checkout-container">
+    <!-- HEADER -->
+    <div class="checkout-header">
+      <i class="fas fa-arrow-left"></i>
+      <h3>Checkout</h3>
+    </div>
 
-<!-- SIDEBAR -->
-<aside class="sidebar">
-<h2>CampusShop</h2>
+    <!-- ENVÍO -->
+    <h4>Envío</h4>
 
-<ul>
-<li><i class="fas fa-border-all"></i> Todos</li>
-<li><i class="fas fa-shirt"></i> Blusas</li>
-<li><i class="fas fa-user"></i> Pantalones</li>
-<li><i class="fas fa-shoe-prints"></i> Zapatillas</li>
-<li><i class="fas fa-bag-shopping"></i> Accesorios</li>
-<li><i class="fas fa-cart-shopping"></i> Carrito</li>
-</ul>
-</aside>
+    <div class="formulario">
+      <input type="text" placeholder="Ingresa tu nombre completo">
+      <input type="text" placeholder="Ingresa tu dirección">
+      <input type="text" placeholder="Tu ciudad">
+    </div>
 
-<!-- CONTENIDO -->
-<section class="checkout-content">
+    <!-- MÉTODO DE PAGO -->
+    <h4>Método de Pago</h4>
 
-<h2>Finalizar compra</h2>
+    <div class="metodos">
+      <div class="metodo activo">
+        <i class="fas fa-credit-card"></i>
+        <p>Bancolombia</p>
+      </div>
 
-<div class="checkout-grid">
+      <div class="metodo">
+        <i class="fas fa-credit-card"></i>
+        <p>Efectivo </p>
+      </div>
 
-<!-- FORMULARIO -->
-<form class="formulario">
+      <div class="metodo">
+        <i class="fas fa-wallet"></i>
+        <p>Paypal</p>
+      </div>
+    </div>
 
- <h3>Datos de envío</h3>
+    <!-- RESUMEN -->
+    <div class="resumen">
+      <h5>Resumen de tu Orden</h5>
 
- <label>Nombre completo</label>
- <input type="text" placeholder="Ingresa tu nombre completo">
+      <div class="item">
+        <img src="img/zapatos1.webp">
+        <div>
+          <p>Zapatillas Deportivas</p>
+          <small>Cantidad: 1</small>
+        </div>
+        <span>$120.000</span>
+      </div>
 
- <label>Dirección</label>
- <input type="text" placeholder="Ingresa tu dirección">
+      <div class="item">
+        <img src="img/pantalon1.webp">
+        <div>
+          <p>Pantalon casual</p>
+          <small>Cantidad: 1</small>
+        </div>
+        <span>$230.000</span>
+      </div>
 
- <label>Ciudad</label>
- <input type="text" placeholder="Tu ciudad">
+      <div class="total">
+        <p>Total</p>
+        <strong>$350.000</strong>
+      </div>
+    </div>
 
+    <!-- BOTÓN -->
+    <button class="btn-pagar">350.000</button>
 
- <h3>Método de pago</h3>
-
- <div class="fila-doble">
-    <input type="text" placeholder="Numero de tarjeta">
-    <input type="text" placeholder="CVV">
-</div>
-
-<input type="text" placeholder="Nombre en la tarjeta">
-<button class="btn-pagar">Pagar ahora</button>
-
-</form>
-
-<!-- RESUMEN -->
-<aside class="resumen-checkout">
-
-<h3>Resumen</h3>
-
-<p>Blusa Elegante - $220.000</p>
-<p>Pantalón Casual - $240.000</p>
-<p>Zapatillas runner - 450000</p>
-
-<h4>Total: $154.000</h4>
-</aside>
-
-</div>
-
-</section>
-
-</main>
-<footer class="footer">
-<p>© 2026 CampusShop</p>
-</footer>
-
+  </div>
+ </main>
 </body>
 </html>
