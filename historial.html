@@ -16,40 +16,68 @@
 
 <body>
 
-<header class="header"><h1>CampusShop</h1></header>
+<main class="historial-app">
 
-<nav class="nav">
-<ul>
-<li><a href="index.html">Inicio</a></li>
-<li><a href="catalogo.html">Catálogo</a></li>
-<li><a href="carrito.html">Carrito</a></li>
-<li><a href="perfil.html">Perfil</a></li>
-</ul>
-</nav>
+  <div class="historial-card">
 
-<main class="historial-container">
+    <!-- HEADER -->
+    <div class="historial-header">
+      <i class="fas fa-arrow-left"></i>
+      <h3>Historial de Pedidos</h3>
+    </div>
 
-<section class="historial-content">
+    <!-- PEDIDO 1 -->
+    <div class="pedido">
+      <div class="pedido-info">
+        <h4>Orden #12345</h4>
+        <p>15 Oct, 2023</p>
+        <span class="estado entregado">Entregado</span>
+      </div>
 
-<h2>Historial de pedidos</h2>
+      <div class="pedido-derecha">
+        <p class="precio">$125.50</p>
+        <button>Ver detalle</button>
+      </div>
+    </div>
 
-<div class="card">
-<p><strong>Orden #001</strong></p>
-<p>Fecha: 10/04/2026</p>
-<p>Estado: Entregado</p>
-</div>
+    <!-- PEDIDO 2 -->
+    <div class="pedido">
+      <div class="pedido-info">
+        <h4>Orden #12344</h4>
+        <p>12 Oct, 2023</p>
+        <span class="estado camino">En camino</span>
+      </div>
 
-<div class="card">
-<p><strong>Orden #002</strong></p>
-<p>Fecha: 08/04/2026</p>
-<p>Estado: En camino</p>
-</div>
+      <div class="pedido-derecha">
+        <p class="precio">$89.990</p>
+        <button>Ver detalle</button>
+      </div>
+    </div>
 
-</section>
+    <!-- PEDIDO 3 -->
+    <div class="pedido">
+      <div class="pedido-info">
+        <h4>Orden #12343</h4>
+        <p>05 Oct, 2023</p>
+        <span class="estado cancelado">Cancelado</span>
+      </div>
+
+      <div class="pedido-derecha">
+        <p class="precio">$210.00</p>
+        <button>Ver detalle</button>
+      </div>
+    </div>
+
+  </div>
 
 </main>
-
-<footer class="footer"><p>© 2026 CampusShop</p></footer>
+<nav class="bottom-nav">
+  <a href="index.html"><i class="fas fa-home"></i><span>Inicio</span></a>
+  <a href="catalogo.html"><i class="fas fa-th-large"></i><span>Categorías</span></a>
+  <a href="carrito.html"><i class="fas fa-shopping-cart"></i><span>Carrito</span></a>
+  <a href="historial.html"><i class="fas fa-box"></i><span>Pedidos</span></a>
+  <a href="perfil.html" class="activo"><i class="fas fa-user"></i><span>Perfil</span></a>
+</nav>
 
 </body>
 </html>

@@ -338,3 +338,134 @@
 .cerrar i {
   color: red;
 }
+/* CONTENEDOR */
+.historial-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f6ff;
+}
+
+/* CARD PRINCIPAL */
+.historial-card {
+    width: 340px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.historial-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.historial-header i {
+    cursor: pointer;
+}
+
+/* PEDIDOS */
+.pedido {
+    display: flex;
+    justify-content: space-between;
+    background: #f5f6ff;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* INFO */
+.pedido-info h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.pedido-info p {
+    font-size: 12px;
+    color: gray;
+    margin: 3px 0;
+}
+
+/* ESTADOS */
+.estado {
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.entregado {
+    background: #d4f8e8;
+    color: #1e9e6a;
+}
+
+.camino {
+    background: #fff3cd;
+    color: #c99700;
+}
+
+.cancelado {
+    background: #f8d7da;
+    color: #c0392b;
+}
+
+/* DERECHA */
+.pedido-derecha {
+    text-align: right;
+}
+
+.precio {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* BOTÓN */
+.pedido button {
+    border: none;
+    background: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* MENÚ INFERIOR */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 340px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+}
+
+/* ITEMS */
+.bottom-nav a {
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ICONOS */
+.bottom-nav i {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+/* ACTIVO */
+.bottom-nav a.activo {
+    color: #5f5fff;
+}
+body {
+    padding-bottom: 80px;
+}
