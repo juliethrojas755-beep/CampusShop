@@ -179,7 +179,7 @@
     background: white;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(183, 122, 205, 0.1);
 }
 
 /* HEADER */
@@ -200,7 +200,7 @@
 
 .formulario input {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #2f56c9;
     border-radius: 10px;
 }
 
@@ -222,8 +222,8 @@
 
 /* ACTIVO */
 .metodo.activo {
-    background: #dff5e8;
-    border: 2px solid #2f6f4f;
+    background: #ab93ed71;
+    border: 2px solid #714bc3;
 }
 
 .metodo i {
@@ -232,7 +232,7 @@
 
 /* RESUMEN */
 .resumen {
-    background: #eef7f1;
+    background: #d9ccef;
     padding: 15px;
     border-radius: 12px;
     margin-bottom: 15px;
@@ -269,7 +269,7 @@
 .btn-pagar {
     width: 100%;
     padding: 12px;
-    background: #2f6f4f;
+    background: #916dcd;
     color: white;
     border: none;
     border-radius: 12px;
@@ -335,7 +335,7 @@
 }
 
 .email {
-  color: gray;
+  color: rgb(149, 115, 208);
   font-size: 14px;
   margin-bottom: 20px;
 }
@@ -423,7 +423,7 @@
 
 .entregado {
     background: #d4f8e8;
-    color: #1e9e6a;
+    color: #9478ce;
 }
 
 .camino {
@@ -521,7 +521,7 @@ body {
 
 .vacio-icono i {
     font-size: 40px;
-    color: #2f6f4f;
+    color: #8c85c5;
 }
 
 /* TEXTO */
@@ -532,14 +532,14 @@ body {
 
 .vacio-card p {
     font-size: 14px;
-    color: gray;
+    color: rgb(128, 128, 128);
     margin-bottom: 20px;
 }
 
 /* BOTÓN */
 .btn-explorar {
     display: block;
-    background: #2f6f4f;
+    background: #5d91c9ae;
     color: white;
     padding: 12px;
     border-radius: 12px;
