@@ -469,3 +469,56 @@
 body {
     padding-bottom: 80px;
 }
+/* CONTENEDOR */
+.vacio-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CARD */
+.vacio-card {
+    text-align: center;
+    width: 320px;
+}
+
+/* ICONO */
+.vacio-icono {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #e6f0eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vacio-icono i {
+    font-size: 40px;
+    color: #2f6f4f;
+}
+
+/* TEXTO */
+.vacio-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.vacio-card p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* BOTÓN */
+.btn-explorar {
+    display: block;
+    background: #2f6f4f;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+}
