@@ -1,14 +1,15 @@
+/* GRID MÁS GRANDE EN TABLET */
 @media (min-width: 768px) {
-    .productos-grid{
-      grid-template-columns:repeat(3,1fr) ;
+    .productos-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
+/* CARRITO EN CELULAR */
 @media (max-width: 600px) {
     .fila {
         grid-template-columns: 1fr;
-        gap:5px;
-
-}
+        gap: 5px;
+    }
 }
 

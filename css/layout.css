@@ -1,12 +1,13 @@
+/* CONTENEDOR PRINCIPAL */
 .home-container {
     display: flex;
     min-height: 100vh;
 }
 
-/* SIDEBAR */
+/* ===== SIDEBAR ===== */
 .sidebar {
     width: 240px;
-    height:650px;
+    height: 650px;
     background: linear-gradient(180deg, #5f5fff, #7a5cff);
     color: white;
     padding: 25px;
@@ -65,12 +66,14 @@
     font-weight: bold;
 }
 
-/* CONTENIDO */
+/* ===== CONTENIDO ===== */
 .contenido-home {
     flex: 1;
     padding: 40px;
     background-color: #f5f6ff;
 }
+
+/* HEADER */
 .header {
     background-color: #5f5fff;
     color: white;
@@ -78,6 +81,7 @@
     padding: 15px;
 }
 
+/* NAV */
 .nav {
     background-color: #eaeaff;
     padding: 10px;
@@ -93,9 +97,9 @@
     font-weight: 500;
 }
 
+/* FOOTER */
 .footer {
     text-align: center;
     padding: 15px;
     background-color: #eaeaff;
 }
-
